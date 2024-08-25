@@ -1,0 +1,17 @@
+@import "./variables.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: $font-descriptions;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+.menu-space {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  border-bottom: 1px solid $color-border;
+}

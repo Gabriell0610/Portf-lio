@@ -1,0 +1,14 @@
+@import "../../styles/variables.scss";
+
+.project-item {
+  .title-project {
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: $font-descriptions;
+    letter-spacing: 0.5px;
+  }
+
+  .title-project:hover {
+    color: $color-details;
+  }
+}
