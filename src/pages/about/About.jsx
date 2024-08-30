@@ -4,7 +4,12 @@ import MenuComponent from "../../components/MenuComponent";
 const About = () => {
   return (
     <div>
-      <MenuComponent />
+      <main className="main-container">
+        <MenuComponent />
+        <div className="content-main">
+          <div className="description-about"></div>
+        </div>
+      </main>
     </div>
   );
 };
