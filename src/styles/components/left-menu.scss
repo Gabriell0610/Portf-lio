@@ -1,8 +1,11 @@
 @import "../variables.scss";
 
 .menu-main {
-  height: 100vh;
+  position: fixed;
   border-right: 1px solid $color-border;
+  max-width: 250px;
+  height: 100vh;
+  // overflow: scroll;
 
   .menu-header {
     .title-header {

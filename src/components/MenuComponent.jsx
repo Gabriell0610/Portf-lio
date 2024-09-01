@@ -11,7 +11,9 @@ const MenuComponent = () => {
   return (
     <aside className="menu-main">
       <div className="menu-header menu-space">
-        <h1 className="title-header">VieiraDev</h1>
+        <h1 onClick={() => navigate("/")} className="title-header">
+          VieiraDev
+        </h1>
         <h3 onClick={() => navigate("/")}>Sobre</h3>
         <h3 onClick={() => navigate("/artigos")}>Artigos</h3>
         <h3>CV</h3>
