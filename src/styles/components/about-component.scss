@@ -30,10 +30,9 @@ button:hover {
 
 .container-about {
   display: flex;
-  gap: 2rem;
   border-bottom: 1px solid $color-details;
+  gap: 4rem;
   padding-bottom: 2rem;
-
   .description-about {
     width: 550px;
   }

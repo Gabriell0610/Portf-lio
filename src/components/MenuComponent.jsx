@@ -1,9 +1,11 @@
+/* eslint-disable react/jsx-no-undef */
 /* eslint-disable no-unused-vars */
 import React from "react";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaBluesky } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 import "../styles/components/left-menu.scss";
 import ButtonMenuComponent from "./ButtonMenuComponent";
-import { useNavigate } from "react-router-dom";
-import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const MenuComponent = () => {
   const navigate = useNavigate();
@@ -45,6 +47,10 @@ const MenuComponent = () => {
         <a href="#">
           {" "}
           <FaLinkedin /> Linkedin
+        </a>
+        <a href="#">
+          {" "}
+          <FaBluesky /> BlueSky
         </a>
       </div>
     </aside>
