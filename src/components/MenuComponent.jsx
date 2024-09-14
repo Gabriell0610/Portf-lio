@@ -2,7 +2,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
-import { FaBluesky } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import "../styles/components/left-menu.scss";
 import ButtonMenuComponent from "./ButtonMenuComponent";
@@ -22,35 +21,42 @@ const MenuComponent = () => {
       </div>
 
       <div className="menu-projects menu-space">
-        <div className="container">
+        <div className="container-project">
           <h3>Projetos Pessoais </h3>
-          <ButtonMenuComponent title="Api Java" />
           <ButtonMenuComponent title="Portfólio" />
-          <ButtonMenuComponent title="Desafio DevMagro" />
+          <ButtonMenuComponent
+            title="Crud Java"
+            onClick={() => navigate("/projeto/crud-java")}
+          />
+          <ButtonMenuComponent title="Site de encomenda " />
         </div>
-        <div className="container mt-3">
-          <h3>Ideias / Desafios</h3>
-          <ButtonMenuComponent title="Gerenciador Financeiro  " />
-          <ButtonMenuComponent title="Desafio Nubank" />
+        <div className="container-project mt-3">
+          <h3>Estudos / Ideias</h3>
+          <ButtonMenuComponent title="Kanban" />
+          <ButtonMenuComponent title="Organizador de Vaga" />
         </div>
       </div>
 
       <div className="social-menu">
         <h3>Contato</h3>
-        <a href="#">
+        <a className="btn-link" href="">
           <FaEnvelope /> Email
         </a>
-        <a href="#">
+        <a
+          className="btn-link"
+          href="https://github.com/Gabriell0610"
+          target="blank"
+        >
           {" "}
           <FaGithub /> Github
         </a>
-        <a href="#">
+        <a
+          className="btn-link"
+          href="https://www.linkedin.com/in/gabriel-vieira-028576255/"
+          target="blank"
+        >
           {" "}
           <FaLinkedin /> Linkedin
-        </a>
-        <a href="#">
-          {" "}
-          <FaBluesky /> BlueSky
         </a>
       </div>
     </aside>

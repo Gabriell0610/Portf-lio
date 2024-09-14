@@ -2,13 +2,15 @@
 import React from "react";
 import MenuComponent from "../../components/MenuComponent";
 
-const DesafioDevMagroPage = () => {
+const Artigo = () => {
   return (
-    <div>
+    <>
       <MenuComponent />
-      <div className="">oi</div>
-    </div>
+      <div className="content-main">
+        <h1>Artigos</h1>
+      </div>
+    </>
   );
 };
 
-export default DesafioDevMagroPage;
+export default Artigo;

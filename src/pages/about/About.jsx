@@ -2,6 +2,7 @@
 import React from "react";
 import MenuComponent from "../../components/MenuComponent";
 import "../../styles/components/about-component.scss";
+import resume from "../../assets/img/resume.pdf";
 
 const About = () => {
   return (
@@ -20,7 +21,11 @@ const About = () => {
               e curso Sistemas de Informação. No momento, trabalho na
               Universidade de Vassouras, em Maricá, RJ.
             </p>
-            <button className="mt-4">Download Currículo</button>
+            <div className="mt-4">
+              <a className="button" href={resume} download="resume">
+                {"Download Currículo"}
+              </a>
+            </div>
           </div>
           <div className="image-about">
             <img src="src\assets\img\eu-perfil.jpg.jpg" alt="" />
@@ -34,14 +39,21 @@ const About = () => {
             </div>
           </div>
         </section>
-        <section className="container-courses">
+        <section className="container-courses mt-4">
           <h2 className="title-section">Educação</h2>
           <div className="course mt-3">
             <h2>Universidade Estácio de Sá</h2>
             <p className="mt-1">
               Bacharelado em Sistema de Informação - Atualmente no 4° semestre
             </p>
-            <button className="mt-2">Acessar CR</button>
+            <div className="mt-3">
+              <a
+                className="button mt-2"
+                href="https://drive.google.com/file/d/1ORs-Xuh5DneKeY7eqUQVjPO-W5jFwdro/view?usp=sharing"
+              >
+                {"Verificar CR"}
+              </a>
+            </div>
           </div>
           <div className="course mt-3">
             <h2>Oracle Next Education</h2>
@@ -49,7 +61,15 @@ const About = () => {
               Curso com foco em desenvolvimento backend - Java + SpringBoot +
               Banco de Dados
             </p>
-            <button className="mt-2">Acessar Certificado</button>
+            <div className="mt-3">
+              <a
+                className="button mt-2"
+                href="https://drive.google.com/file/d/1ORs-Xuh5DneKeY7eqUQVjPO-W5jFwdro/view?usp=sharing"
+                target="blank"
+              >
+                {"Certificado  "}
+              </a>
+            </div>
           </div>
         </section>
       </main>

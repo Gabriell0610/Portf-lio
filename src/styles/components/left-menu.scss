@@ -5,7 +5,8 @@
   border-right: 1px solid $color-border;
   max-width: 250px;
   height: 100vh;
-  // overflow: scroll;
+  overflow: scroll;
+  overflow-x: hidden;
 
   .menu-header {
     .title-header {
@@ -26,7 +27,7 @@
   }
 
   .menu-projects {
-    .container {
+    .container-project {
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
@@ -53,20 +54,21 @@
       color: $color-titles;
     }
 
-    a {
-      cursor: pointer;
-      text-decoration: none;
-      color: $color-text;
+    .btn-link {
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
 
-    a:hover {
+    .btn-link:hover {
       color: $color-details;
     }
   }
+}
+
+.menu-main::-webkit-scrollbar {
+  width: 0px;
 }
 
 .menu-space {
