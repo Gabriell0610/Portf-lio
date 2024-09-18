@@ -2,6 +2,8 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { MdOutlineTranslate } from "react-icons/md";
+import { MdOutlineLightMode } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import "../styles/components/left-menu.scss";
 import ButtonMenuComponent from "./ButtonMenuComponent";
@@ -12,10 +14,10 @@ const MenuComponent = () => {
   return (
     <aside className="menu-main">
       <div className="menu-header menu-space">
-        <h1 onClick={() => navigate("/")} className="title-header">
-          VieiraDev
-        </h1>
-        <h3 onClick={() => navigate("/")}>Sobre</h3>
+        <h1 className="title title-header">Vieira Dev</h1>
+        <h3 className="mt-1" onClick={() => navigate("/")}>
+          Sobre
+        </h3>
         <h3 onClick={() => navigate("/artigos")}>Artigos</h3>
         <h3>CV</h3>
       </div>

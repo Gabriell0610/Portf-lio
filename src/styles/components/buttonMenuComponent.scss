@@ -6,9 +6,10 @@
     cursor: pointer;
     font-family: $font-descriptions;
     letter-spacing: 0.5px;
+    color: $color-text;
   }
 
   .title-project:hover {
-    color: $color-details;
+    color: $color-title;
   }
 }

@@ -2,7 +2,12 @@
 import React from "react";
 import MenuComponent from "../../components/MenuComponent";
 import ProjectDetails from "../../components/ProjectDetails";
-import image from "../../assets/img/image-project-1.avif";
+import image from "../../assets/img/Java-logo-008.avif";
+import { FaJava } from "react-icons/fa";
+import { SiJunit5 } from "react-icons/si";
+import { SiSpring } from "react-icons/si";
+import { SiHibernate } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 const CrudJava = () => {
   const detailsProject = {
@@ -17,6 +22,14 @@ const CrudJava = () => {
       "Excluir Usuário ✅",
       "Buscar Usuário pelo Nome, Email ou Idade ✅",
     ],
+    linkRepository: "https://github.com/Gabriell0610/Desafio-Final-devMagro",
+    tecnologies: [
+      { icon: <FaJava title="Java" /> },
+      { icon: <SiJunit5 title="Junit 5" /> },
+      { icon: <SiSpring title="Spring" /> },
+      { icon: <SiHibernate title="Hibernate" /> },
+      { icon: <BiLogoPostgresql title="PostgreSQL" /> },
+    ],
   };
 
   return (
@@ -28,6 +41,8 @@ const CrudJava = () => {
           description={detailsProject.description}
           image={detailsProject.image}
           functionality={detailsProject.functionality}
+          linkRepository={detailsProject.linkRepository}
+          tecnologies={detailsProject.tecnologies}
         />
       </main>
     </>

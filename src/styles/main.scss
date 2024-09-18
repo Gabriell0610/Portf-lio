@@ -18,24 +18,56 @@
 
 @import "./variables.scss";
 
+* {
+  font-family: $font-descriptions;
+}
+
 .content-main {
   margin-left: 240px;
   padding: 1.5rem 3rem;
+  flex: 1;
 }
 
+.footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+ul li {
+  list-style: none;
+}
+
+.title {
+  font-family: $font-title;
+  font-weight: 400;
+  font-family: 3rem;
+}
+
+.btn-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.btn-link:hover {
+  color: $color-title;
+}
+
+a {
+  text-decoration: none;
+}
 .mt {
   @for $i from 1 to 10 {
     &-#{ $i } {
       margin-top: #{$i}vh;
     }
   }
-}
-
-a {
-  color: $color-text;
-  text-decoration: none;
-}
-
-ul li {
-  list-style: none;
 }
