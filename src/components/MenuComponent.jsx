@@ -19,13 +19,16 @@ const MenuComponent = () => {
           Sobre
         </h3>
         <h3 onClick={() => navigate("/artigos")}>Artigos</h3>
-        <h3>CV</h3>
+        <h3 onClick={() => navigate("/experiencias")}>CV</h3>
       </div>
 
       <div className="menu-projects menu-space">
         <div className="container-project">
           <h3>Projetos Pessoais </h3>
-          <ButtonMenuComponent title="Portfólio" />
+          <ButtonMenuComponent
+            title="Portfólio"
+            onClick={() => navigate("/projeto/projeto2")}
+          />
           <ButtonMenuComponent
             title="Crud Java"
             onClick={() => navigate("/projeto/crud-java")}

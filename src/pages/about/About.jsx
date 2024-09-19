@@ -72,6 +72,9 @@ const About = () => {
             </button>
           </div>
         </section>
+        <div className="footer">
+          &copy; Gabriel Vieira - Todos os direitos reservados
+        </div>
       </main>
     </div>
   );
