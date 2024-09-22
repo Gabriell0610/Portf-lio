@@ -9,25 +9,8 @@
 }
 
 .content-main {
-  margin-left: 240px;
+  margin-left: 228px;
   padding: 1.5rem 3rem;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-  position: fixed;
-  bottom: 0;
-  right: 80px;
-  font-size: 1rem;
-  color: $color-text;
-}
-
-.flex {
-  display: flex;
-  gap: 1rem;
 }
 
 ul li {
@@ -38,6 +21,7 @@ ul li {
   font-family: $font-title;
   font-weight: 400;
   font-size: 2.3rem;
+  color: $color-text;
 }
 
 .btn-link {
@@ -54,6 +38,34 @@ ul li {
 a {
   text-decoration: none;
 }
+
+button {
+  border: 2px solid $color-text;
+  padding: 0.35rem 0.5rem;
+  transition: transform 0.4s, box-shadow 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  width: 150px;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: $color-text;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+}
+
+button:hover {
+  background-color: $color-text;
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  a {
+    color: $color-white;
+  }
+}
+
 .mt {
   @for $i from 1 to 10 {
     &-#{ $i } {

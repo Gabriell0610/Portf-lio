@@ -26,9 +26,6 @@ const Curriculo = () => {
             </div>
           ))}
         </div>
-        <div className="footer">
-          &copy; Gabriel Vieira - Todos os direitos reservados
-        </div>
       </main>
     </>
   );

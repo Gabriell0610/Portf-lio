@@ -2,31 +2,30 @@
 
 .container {
   display: flex;
-  gap: 5rem;
+  justify-content: space-between;
   border-bottom: 1px solid $color-border;
-  padding-bottom: 2rem;
-
-  .description {
-    min-width: 250px;
-    width: 100%;
-  }
+  padding-bottom: 1rem;
+  gap: 2rem;
 
   .project {
-    width: 600px;
-    height: 210px;
-
     img {
-      height: 100%;
       cursor: pointer;
+      width: 350px;
       border-radius: 2px;
-      border: 1px solid $color-text;
-    }
-
-    .btn-link {
-      color: $color-text;
-      margin-top: 0.1rem;
+      object-fit: cover;
     }
   }
+
+  .container-button {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.container-badges {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 .main-title {

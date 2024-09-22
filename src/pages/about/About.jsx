@@ -6,7 +6,7 @@ import resume from "../../assets/img/resume.pdf";
 
 const About = () => {
   return (
-    <div>
+    <>
       <MenuComponent />
       <main className="content-main">
         <h1 className="title ">Desenvolvedor Web</h1>
@@ -72,11 +72,8 @@ const About = () => {
             </button>
           </div>
         </section>
-        <div className="footer">
-          &copy; Gabriel Vieira - Todos os direitos reservados
-        </div>
       </main>
-    </div>
+    </>
   );
 };
 

@@ -2,14 +2,12 @@
 
 .project-item {
   .title-project {
-    font-size: 1rem;
+    font-size: 1.1rem;
     cursor: pointer;
-    font-family: $font-descriptions;
-    letter-spacing: 0.5px;
     color: $color-text;
   }
 
   .title-project:hover {
-    color: $color-title;
+    color: $color-title-datails;
   }
 }

@@ -24,7 +24,7 @@ const MenuComponent = () => {
 
       <div className="menu-projects menu-space">
         <div className="container-project">
-          <h3>Projetos Pessoais </h3>
+          <h3>Projetos Pessoais</h3>
           <ButtonMenuComponent
             title="Portfólio"
             onClick={() => navigate("/projeto/projeto2")}
