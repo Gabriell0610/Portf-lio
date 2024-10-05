@@ -15,6 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     font-size: 1.5rem;
+
     ul,
     li {
       display: flex;
@@ -27,6 +28,7 @@ header {
   }
 
   .description {
+    width: 100%;
     h1 {
       font-size: 4rem;
       font-weight: 500;
@@ -38,7 +40,6 @@ header {
   }
 
   .container-contact {
-    margin-left: 3px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,6 +58,129 @@ header {
       a {
         color: $color-white;
       }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  header {
+    padding: 1rem;
+    .nav-bar {
+      font-size: 1rem;
+      flex-wrap: wrap;
+
+      ul,
+      li {
+        gap: 1rem;
+      }
+
+      .logo-title {
+        font-size: 1rem;
+      }
+    }
+
+    .description {
+      margin-top: 1rem;
+      h1 {
+        font-size: 1.6rem;
+      }
+      h2 {
+        font-size: 1rem;
+        margin-left: 0;
+      }
+    }
+
+    .container-contact {
+      flex-direction: column;
+      margin-top: 3vh;
+
+      .social-links {
+        display: none;
+      }
+
+      .btn-header {
+        padding: 0.5rem;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 521px) and (max-width: 700px) {
+  header {
+    padding: 1rem 1.5rem 2rem;
+    .nav-bar {
+      font-size: 1.3rem;
+      flex-wrap: wrap;
+
+      ul,
+      li {
+        gap: 1rem;
+      }
+
+      .logo-title {
+        font-size: 1.3rem;
+      }
+    }
+
+    .description {
+      margin-top: 1rem;
+      h1 {
+        font-size: 2.3rem;
+      }
+      h2 {
+        font-size: 1rem;
+        margin-left: 0;
+      }
+    }
+
+    .container-contact {
+      flex-direction: column;
+      margin-top: 3vh;
+
+      .social-links {
+        display: none;
+      }
+
+      .btn-header {
+        padding: 0.5rem;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 701px) and (max-width: 869px) {
+  header {
+    padding: 1.5rem 2rem 3rem;
+    .nav-bar {
+      font-size: 1.3rem;
+      flex-wrap: wrap;
+
+      ul,
+      li {
+        gap: 1rem;
+      }
+
+      .logo-title {
+        font-size: 1.3rem;
+      }
+    }
+
+    .description {
+      margin-top: 1rem;
+      h1 {
+        font-size: 3rem;
+      }
+      h2 {
+        font-size: 1rem;
+        margin-left: 0;
+      }
+    }
+
+    .container-contact {
+      margin-top: 3vh;
+      flex-wrap: wrap;
     }
   }
 }

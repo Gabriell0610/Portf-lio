@@ -1,13 +1,14 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React from "react";
-
+import React, { useState } from "react";
 import "../styles/components/menu-header.scss";
 import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { FaThreads } from "react-icons/fa6";
 import { TbBrandLinktree } from "react-icons/tb";
+
 import Button from "../components/Button";
 
-const MenuComponent = () => {
+const MenuComponent = ({ onMenuClick }) => {
   return (
     <header>
       <nav className="nav-bar">
@@ -18,16 +19,24 @@ const MenuComponent = () => {
         </span>
         <ul className="nav-items">
           <li>
-            <a href="#">Home</a>
+            <a href="#" onClick={() => onMenuClick("contato")}>
+              Contato{" "}
+            </a>
           </li>
           <li>
-            <a href="#">Projetos</a>
+            <a href="#" onClick={() => onMenuClick("projetos")}>
+              Projetos
+            </a>
           </li>
           <li>
-            <a href="#">Sobre</a>
+            <a href="#" onClick={() => onMenuClick("sobre")}>
+              Sobre
+            </a>
           </li>
           <li>
-            <a href="#">Artigos</a>
+            <a href="#" onClick={() => onMenuClick("artigos")}>
+              Artigos
+            </a>
           </li>
         </ul>
       </nav>

@@ -4,12 +4,12 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   min-width: 320px;
-  gap: 2rem;
+  gap: 1rem;
 
   .container-content {
     .card-image {
       background-color: $color-gray-strong;
-      padding: 1rem;
+      padding: 0.7rem;
       border-radius: 2px;
 
       img {
@@ -31,6 +31,7 @@
 }
 
 /* Comportamento responsivo */
+
 @media (max-width: 1024px) {
   .container-project {
     grid-template-columns: repeat(2, 1fr); /* 2 colunas para telas médias */

@@ -3,7 +3,7 @@
 import React from "react";
 import "../styles/components/button-component.scss";
 
-const Button = ({ url, download, text, classe }) => {
+const Button = ({ classe, text, url, download }) => {
   return (
     <button className={classe}>
       <a href={url} download={download}>

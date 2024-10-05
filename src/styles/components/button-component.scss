@@ -2,18 +2,18 @@
 
 .button-main {
   border: 2px solid $color-text;
-  padding: 0.35rem 0.5rem;
+  padding: 0.45rem 0.5rem;
   transition: transform 0.4s, box-shadow 0.2s;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: transparent;
-  width: 150px;
+  width: 170px;
   cursor: pointer;
   color: $color-white;
 
   a {
     color: $color-text;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-family: $font-descriptions;
   }
 }
@@ -37,6 +37,7 @@
   font-weight: 500;
   color: $color-text;
   transition: 0.3s;
+  cursor: pointer;
 
   a {
     color: $color-text;
