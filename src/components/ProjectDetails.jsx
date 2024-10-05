@@ -3,7 +3,7 @@
 import React from "react";
 import "../styles/components/project-component.scss";
 import { FaGithub } from "react-icons/fa";
-import javaLogo from "../assets/img/Java-logo-008.avif";
+
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const ProjectDetails = () => {
@@ -11,7 +11,7 @@ const ProjectDetails = () => {
     <article className="container-project mt-5">
       <div className="container-content">
         <div className="card-image">
-          <img src="src/assets/img/image-java-project.webp" alt="" />
+          <img src="assets/img/image-java-project.webp" alt="" />
         </div>
         <div className="description-project  mt-2">
           <a
@@ -24,7 +24,7 @@ const ProjectDetails = () => {
       </div>
       <div className="container-content">
         <div className="card-image">
-          <img src="src/assets/img/image-java-project.webp" alt="" />
+          <img src="assets/img/image-java-project.webp" alt="" />
         </div>
         <div className="description-project mt-2">
           <a href="#">
@@ -34,7 +34,7 @@ const ProjectDetails = () => {
       </div>
       <div className="container-content">
         <div className="card-image">
-          <img src="src/assets/img/image-java-project.webp" alt="" />
+          <img src="assets/img/image-java-project.webp" alt="" />
         </div>
         <div className="description-project  mt-2">
           <a href="#">

@@ -69,10 +69,10 @@ const Home = () => {
             </div>
             <div className="left-side">
               <div className="image">
-                <img src="src/assets/img/eu-perfil.jpg.jpg" alt="" />
+                <img src="assets/img/eu-perfil.jpg.jpg" alt="" />
               </div>
               <div className="image mt-4">
-                <img src="src/assets/img/image-portfolio.jpg" alt="" />
+                <img src="assets/img/image-portfolio.jpg" alt="" />
                 <span>Icarai/Niterói</span>
               </div>
             </div>
