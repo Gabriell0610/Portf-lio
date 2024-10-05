@@ -1,0 +1,46 @@
+@import "../variables.scss";
+
+footer {
+  padding: 2rem 2rem 0.5rem;
+  background-color: $color-bg-footer;
+  color: $color-white;
+
+  a:hover {
+    opacity: 0.7;
+  }
+
+  .description-footer {
+    width: 100%;
+
+    span {
+      color: $color-details-footer;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
+
+  .container-icons {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    font-size: 2rem;
+  }
+
+  .email {
+    font-size: 1.2rem;
+    color: $color-details-footer;
+    border-bottom: 1px solid $color-white;
+    padding-bottom: 3px;
+    width: 278px;
+  }
+
+  .copy {
+    text-align: center;
+    font-size: 1.1rem;
+    color: $color-gray-strong;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}

@@ -1,39 +1,44 @@
 @import "../variables.scss";
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid $color-border;
-  padding-bottom: 1rem;
+.container-project {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  min-width: 320px;
   gap: 2rem;
 
-  .project {
-    img {
-      cursor: pointer;
-      width: 350px;
+  .container-content {
+    .card-image {
+      background-color: $color-gray-strong;
+      padding: 1rem;
       border-radius: 2px;
-      object-fit: cover;
+
+      img {
+        width: 100%;
+        border-radius: 4px;
+      }
+    }
+
+    .description-project {
+      a {
+        color: $color-text;
+        font-weight: 500;
+        border-bottom: 1px solid $color-text;
+        padding-bottom: 3px;
+        font-size: 1.2rem;
+      }
     }
   }
+}
 
-  .container-button {
-    display: flex;
-    justify-content: space-between;
+/* Comportamento responsivo */
+@media (max-width: 1024px) {
+  .container-project {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas para telas médias */
   }
 }
 
-.container-badges {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.main-title {
-  color: $color-title-datails;
-}
-
-.tech-icons {
-  font-size: 3rem;
-  color: $color-text;
-  cursor: pointer;
+@media (max-width: 768px) {
+  .container-project {
+    grid-template-columns: 1fr; /* 1 coluna para telas pequenas */
+  }
 }

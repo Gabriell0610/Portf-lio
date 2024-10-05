@@ -1,70 +1,72 @@
-/* eslint-disable react/jsx-no-undef */
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
-import { MdOutlineTranslate } from "react-icons/md";
-import { MdOutlineLightMode } from "react-icons/md";
-import { useNavigate } from "react-router-dom";
-import "../styles/components/left-menu.scss";
-import ButtonMenuComponent from "./ButtonMenuComponent";
+
+import "../styles/components/menu-header.scss";
+import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaThreads } from "react-icons/fa6";
+import { TbBrandLinktree } from "react-icons/tb";
+import Button from "../components/Button";
 
 const MenuComponent = () => {
-  const navigate = useNavigate();
-
   return (
-    <aside className="menu-main">
-      <div className="menu-header menu-space">
-        <h1 className="title title-header">Vieira Dev</h1>
-        <h3 className="mt-1" onClick={() => navigate("/")}>
-          Sobre
-        </h3>
-        <h3 onClick={() => navigate("/artigos")}>Artigos</h3>
-        <h3 onClick={() => navigate("/experiencias")}>CV</h3>
-      </div>
-
-      <div className="menu-projects menu-space">
-        <div className="container-project">
-          <h3>Projetos Pessoais</h3>
-          <ButtonMenuComponent
-            title="Portfólio"
-            onClick={() => navigate("/projeto/projeto2")}
+    <header>
+      <nav className="nav-bar">
+        <span>
+          <a className="logo-title" href="/">
+            VieiraDev
+          </a>
+        </span>
+        <ul className="nav-items">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Projetos</a>
+          </li>
+          <li>
+            <a href="#">Sobre</a>
+          </li>
+          <li>
+            <a href="#">Artigos</a>
+          </li>
+        </ul>
+      </nav>
+      <div className="description mt-5">
+        <h1>Desenvolvedor de Software</h1>
+        <h2>
+          Entre em contato para desenvolver sistemas e sites personalizados!
+          Transforme suas ideias em realidade.
+        </h2>
+        <div className="container-contact mt-8">
+          <div className="social-links">
+            <a href="https://www.instagram.com/">
+              <FaInstagram title="Instagram" />
+            </a>
+            <a href="https://www.linkedin.com/in/gabriel-vieira-028576255/">
+              <FaLinkedin title="LinkedIn" />
+            </a>
+            <a href="https://www.threads.net/@gb__vieira">
+              <FaThreads title="Threads" />
+            </a>
+            <a href="#">
+              <TbBrandLinktree title="Linktree" />
+            </a>
+            <a href="#">
+              <FaWhatsapp title="Whatsapp" />
+            </a>
+            <a href="mailto:gabrielbarbosaa432@gmail.com">
+              <p className="email">gabrielbarbosaa432@gmail.com</p>
+            </a>
+          </div>
+          <Button
+            classe={"btn-header"}
+            url={"/assets/resume.pdf"}
+            download={"curriculo-gabriel.pdf"}
+            text={"Download currículo"}
           />
-          <ButtonMenuComponent
-            title="Crud Java"
-            onClick={() => navigate("/projeto/crud-java")}
-          />
-          <ButtonMenuComponent title="Site de encomenda " />
-        </div>
-        <div className="container-project mt-3">
-          <h3>Estudos / Ideias</h3>
-          <ButtonMenuComponent title="Kanban" />
-          <ButtonMenuComponent title="Organizador de Vaga" />
         </div>
       </div>
-
-      <div className="social-menu">
-        <h3>Contato</h3>
-        <a className="btn-link" href="">
-          <FaEnvelope /> Email
-        </a>
-        <a
-          className="btn-link"
-          href="https://github.com/Gabriell0610"
-          target="blank"
-        >
-          {" "}
-          <FaGithub /> Github
-        </a>
-        <a
-          className="btn-link"
-          href="https://www.linkedin.com/in/gabriel-vieira-028576255/"
-          target="blank"
-        >
-          {" "}
-          <FaLinkedin /> Linkedin
-        </a>
-      </div>
-    </aside>
+    </header>
   );
 };
 

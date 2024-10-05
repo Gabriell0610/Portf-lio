@@ -42,7 +42,7 @@ const About = () => {
         <section className="container-courses mt-4">
           <h2 className="title-section">Educação</h2>
           <div className="course mt-3">
-            <h2>Universidade Estácio de Sá</h2>
+            <h3>Universidade Estácio de Sá</h3>
             <p className="mt-1">
               Bacharelado em Sistema de Informação - Atualmente no 4° semestre
             </p>
@@ -56,7 +56,7 @@ const About = () => {
             </button>
           </div>
           <div className="course mt-3">
-            <h2>Oracle Next Education</h2>
+            <h3>Oracle Next Education</h3>
             <p className="mt-1">
               Curso com foco em desenvolvimento backend - Java + SpringBoot +
               Banco de Dados

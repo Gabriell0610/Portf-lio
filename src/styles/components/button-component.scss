@@ -1,0 +1,53 @@
+@import "../variables.scss";
+
+.button-main {
+  border: 2px solid $color-text;
+  padding: 0.35rem 0.5rem;
+  transition: transform 0.4s, box-shadow 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  width: 150px;
+  cursor: pointer;
+  color: $color-white;
+
+  a {
+    color: $color-text;
+    font-weight: 500;
+    font-size: 0.9rem;
+    font-family: $font-descriptions;
+  }
+}
+
+.button-main:hover {
+  background-color: $color-text;
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  a {
+    color: $color-white;
+  }
+}
+
+.btn-header {
+  background-color: $color-white;
+  border: 0;
+  width: 170px;
+  padding: 0.7rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: $color-text;
+  transition: 0.3s;
+
+  a {
+    color: $color-text;
+  }
+}
+
+.btn-header:hover {
+  background-color: $color-text;
+  color: $color-white;
+
+  a {
+    color: $color-white;
+  }
+}
